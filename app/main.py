@@ -1,6 +1,7 @@
 from typing import Any, Dict, AnyStr, List, Union
 from fastapi import Request, FastAPI
 from pydantic import BaseModel
+from credentials import *
 
 app = FastAPI()
 
