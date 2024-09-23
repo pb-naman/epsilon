@@ -3,6 +3,7 @@ from fastapi import Request, FastAPI, HTTPException
 from pydantic import BaseModel
 from utils import tg_runInstalledQuery
 import json
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
