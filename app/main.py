@@ -7,10 +7,10 @@ import json
 app = FastAPI()
 
 origins = [
-    "http://localhost",
-    "http://localhost:80",
-    "http://localhost:3001",
-    "http://127.0.0.1:3001",
+    "http://localhost:3000",
+    "https://localhost:3000",
+    "http://192.168.0.20:3000",
+    "https://192.168.0.20:3000"
 ]
 
 class Item(BaseModel):
