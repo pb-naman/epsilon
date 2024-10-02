@@ -7,11 +7,9 @@ def get_tg_conn():
 		password=PASSWORD,
 		graphname=GRAPHNAME,
 		)
-	try:
-		conn.apiToken = conn.getToken(Secret)
-		return conn
-	except :
-		print()
+
+	conn.apiToken = conn.getToken(Secret)
+	return conn
 
 
 def tg_runInstalledQuery(queryname, params):
