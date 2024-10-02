@@ -6,10 +6,12 @@ def get_tg_conn():
 		username=USERNAME,
 		password=PASSWORD,
 		graphname=GRAPHNAME,
-		gsPort="443"
 		)
-	conn.apiToken = conn.getToken(Secret)
-	return conn
+	try:
+		conn.apiToken = conn.getToken(Secret)
+		return conn
+	except :
+		print()
 
 
 def tg_runInstalledQuery(queryname, params):
