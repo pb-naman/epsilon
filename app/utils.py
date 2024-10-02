@@ -5,7 +5,8 @@ def get_tg_conn():
 	conn = tg.TigerGraphConnection(host=HOST,
 		username=USERNAME,
 		password=PASSWORD,
-		graphname=GRAPHNAME
+		graphname=GRAPHNAME,
+		gsPort="443"
 		)
 	conn.apiToken = conn.getToken(Secret)
 	return conn
